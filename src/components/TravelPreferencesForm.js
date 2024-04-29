@@ -37,7 +37,7 @@ function TravelPreferencesForm() {
     event.preventDefault();
     try {
       const res = await axios.post(
-        "http://3.34.125.188:3000/api/findMatches",
+        "http://3.34.125.188:8000/api/findMatches",
         formData
       );
       dispatch(fulfilled(res.data));
